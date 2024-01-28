@@ -80,13 +80,13 @@ function AddEmployee() {
                             placeholder:text-textColor rounded-md cursor-pointer required"/>
                                 </div>
                                 <div className="mb-5">
-                                    <input type="text" placeholder="Card Issue Date" name="idate" value={userForm.idate} onChange={inputsHandler}
+                                    <input type="date" placeholder="Card Issue Date" name="idate" value={userForm.idate} onChange={inputsHandler}
                                         className="w-full pr-1 py-1 border-b border-solid border-[#0066ff61] focus:outline-none
                             focus:border-b-primaryColor text-[16px] leading-7 text-headingColor
                             placeholder:text-textColor rounded-md cursor-pointer required"/>
                                 </div>
                                 <div className="mb-5">
-                                    <input type="text" placeholder="Card Expiray Date" name="edate" value={userForm.edate} onChange={inputsHandler}
+                                    <input type="date" placeholder="Card Expiray Date" name="edate" value={userForm.edate} onChange={inputsHandler}
                                         className="w-full pr-1 py-1 border-b border-solid border-[#0066ff61] focus:outline-none
                             focus:border-b-primaryColor text-[16px] leading-7 text-headingColor
                             placeholder:text-textColor rounded-md cursor-pointer required"/>

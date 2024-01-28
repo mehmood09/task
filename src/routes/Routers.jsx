@@ -1,15 +1,17 @@
 import React from "react";
+import Employee from "../components/Employee/CreateEmployee";
+import EmployeeList from "../components/Employee/EmployeeList";
+import Home from "../pages/Home";
 
-//import Home from "../pages/Home";
-import Home from "../components/container/home/index";
-import About from "../components/container/about/index";
 import {Routes, Route} from 'react-router-dom'
 
 const Routers = () => {
     return (
         <Routes>
-        <Route index path="/" element = {<Home/>} />
-        <Route path="/about" element = {<About/>} />       
+        <Route path="/" element = {<Home/>} />
+        <Route path="/home" element = {<Home/>} />
+        <Route path="/employee" element = {<Employee/>} />
+        <Route path="/employee-list" element = {<EmployeeList/>} />
       </Routes> 
     )
    
