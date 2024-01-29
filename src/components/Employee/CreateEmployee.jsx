@@ -24,7 +24,7 @@ function AddEmployee() {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/employee/create-employee", userForm)
+      .post("https://faizan-production-employee.up.railway.app/employee/create-employee", userForm)
       .then((res) => {
         console.log(res.data);
         setUserForm({

@@ -42,10 +42,10 @@ export const Employee = () => {
       const [search, setSearch]= useState('');
       const [filter, setFilter] = useState([]);
 
-      //fetch('http://localhost:3000/api/patients').then(res => res.json()
+      //fetch('http://localhost:3000/api/patients').then(res => res.json()   const req = await fetch("http://localhost:4000/employee/").then(res => res.json());
       const getEmployeesss = async() => {
         try {
-            const req = await fetch("http://localhost:4000/employee/").then(res => res.json());
+            const req = await fetch("https://faizan-production-employee.up.railway.app/employee/").then(res => res.json());
             //const res = await req.json();
             setData(res);
             setFilter(res);            
@@ -56,7 +56,7 @@ export const Employee = () => {
       const getEmployee = async() => {
         try {
             axios
-            .get("http://localhost:4000/employee/")
+            .get("https://faizan-production-employee.up.railway.app/employee/")
             .then((res) => {
                 setData(res.data.data);
                 setFilter(res);
